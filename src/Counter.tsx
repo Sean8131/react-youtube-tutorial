@@ -4,7 +4,7 @@ import './App.css'
 function Counter() {
     const [count, setCount] = useState(0);
 
-    const increment = () => setCount(count +1);
+    const increment = () => setCount(Math.min(10, count + 1));
     const decrement = () => setCount(Math.max(0, count - 1));
     const reset = () => setCount(0);
 
